@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+# 💬 Real-Time Chat App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, high-performance real-time chat application built with a modern full-stack architecture. This project leverages **React** for the UI, **TypeScript** for robust type safety, and **Supabase** for the backend infrastructure.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+* **Real-time Messaging**: Instant message delivery using Supabase Realtime subscriptions.
+* **User Authentication**: Secure Sign-up and Login powered by Supabase Auth.
+* **Persistent Storage**: Full chat history stored in PostgreSQL.
+* **Optimistic UI**: Smooth user experience with immediate message rendering.
+* **Type Safety**: End-to-end typing for database schema and application logic.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React 18 (Vite) |
+| **Language** | TypeScript |
+| **Backend/DB** | Supabase (PostgreSQL) |
+| **Styling** | Vanilla CSS |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🚀 Getting Started
+
+### 1. Prerequisites
+* [Node.js](https://nodejs.org/) (v18.0.0 or higher)
+* A [Supabase](https://supabase.com/) account and project.
+
+### 2. Clone and Install
+```bash
+git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+cd your-repo-name
+npm install
